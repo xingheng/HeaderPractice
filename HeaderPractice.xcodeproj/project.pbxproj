@@ -61,6 +61,7 @@
 				6844FAB126D78B48002BB657 /* AppDelegate.m */,
 				6844FAC226D78B8C002BB657 /* MainViewController.h */,
 				6844FAC326D78B8C002BB657 /* MainViewController.m */,
+				6844FAC926D7956F002BB657 /* placeholders */,
 				6844FAB526D78B4A002BB657 /* Assets.xcassets */,
 				6844FAB726D78B4A002BB657 /* LaunchScreen.storyboard */,
 				6844FABA26D78B4A002BB657 /* Info.plist */,
@@ -70,7 +71,24 @@
 			path = HeaderPractice;
 			sourceTree = "<group>";
 		};
+		6844FAC926D7956F002BB657 /* placeholders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = placeholders;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB2BD785A747D990A45FBDB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6844FAAC26D78B48002BB657 /* HeaderPractice */ = {
@@ -80,6 +98,7 @@
 				6844FAA926D78B48002BB657 /* Sources */,
 				6844FAAA26D78B48002BB657 /* Frameworks */,
 				6844FAAB26D78B48002BB657 /* Resources */,
+				AB2BD785A747D990A45FBDB9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -278,7 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/$PROJECT_NAME/PrefixHeader.pch";
 				INFOPLIST_FILE = HeaderPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/$PROJECT_NAME/PrefixHeader.pch";
 				INFOPLIST_FILE = HeaderPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
