@@ -4,6 +4,7 @@ set -euo pipefail
 
 HEADER_DIR="./HeaderPractice/placeholders"
 HEADER_PREFIX="Placeholder"
+COUNT="${1:-1000}"
 
 function generate_placeholder_class() {
     local id="$1"
@@ -54,10 +55,8 @@ mkdir -p "$HEADER_DIR"
 # Remove the existing placeholder files.
 find "$HEADER_DIR" -type f -name "*.h" -or -name "*.m" | xargs -I@ rm -fr @
 
-for i in `seq 100`
+for i in `seq $COUNT`
 do
     generate_placeholder_class $i
 done
 
-echo "Adding files to project..."
-ruby ./generator.rb
