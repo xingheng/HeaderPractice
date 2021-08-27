@@ -46,8 +46,6 @@ EOF
 
 @end
 EOF
-
-    echo "Generated $HEADER_DIR/$HEADER_PREFIX$id.{h,m}"
 }
 
 
@@ -57,6 +55,9 @@ find "$HEADER_DIR" -type f -name "*.h" -or -name "*.m" | xargs -I@ rm -fr @
 
 for i in `seq $COUNT`
 do
+    echo -ne "Generating $HEADER_DIR/$HEADER_PREFIX$i.{h,m} \r"
     generate_placeholder_class $i
 done
 
+echo -ne '\n'
+echo -e "Generated $((COUNT*2)) file(s) under $HEADER_DIR\r"
