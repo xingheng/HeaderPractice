@@ -18,6 +18,7 @@ function generate_placeholder_class() {
 //
 
 #import <Foundation/Foundation.h>
+// #import "CommonHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

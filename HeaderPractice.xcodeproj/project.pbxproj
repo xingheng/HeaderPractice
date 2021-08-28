@@ -12,6 +12,7 @@
 		6844FAB926D78B4A002BB657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6844FAB726D78B4A002BB657 /* LaunchScreen.storyboard */; };
 		6844FABC26D78B4A002BB657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844FABB26D78B4A002BB657 /* main.m */; };
 		6844FAC426D78B8C002BB657 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844FAC326D78B8C002BB657 /* MainViewController.m */; };
+		6898215726DCAB11006464C4 /* CommonHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6898215626DCAB11006464C4 /* CommonHeader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		6844FAC226D78B8C002BB657 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		6844FAC326D78B8C002BB657 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		6844FAC526D78DD8002BB657 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6898215626DCAB11006464C4 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				6844FAB726D78B4A002BB657 /* LaunchScreen.storyboard */,
 				6844FABA26D78B4A002BB657 /* Info.plist */,
 				6844FAC526D78DD8002BB657 /* PrefixHeader.pch */,
+				6898215626DCAB11006464C4 /* CommonHeader.h */,
 				6844FABB26D78B4A002BB657 /* main.m */,
 			);
 			path = HeaderPractice;
@@ -85,6 +88,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6898215726DCAB11006464C4 /* CommonHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +301,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/$PROJECT_NAME/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/PrefixHeader.pch;
 				INFOPLIST_FILE = HeaderPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/$PROJECT_NAME/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/$PROJECT_NAME/PrefixHeader.pch;
 				INFOPLIST_FILE = HeaderPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
